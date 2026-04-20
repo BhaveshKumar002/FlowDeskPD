@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowDesk Documents Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --text-main: #1E1E24;
+            --text-secondary: #64748B;
+            --bg-gradient: radial-gradient(circle at top left, #F8FAFC, #E0E7FF);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .hub-container {
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            padding: 60px 40px;
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+
+        .links-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            background: white;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+            border: 1px solid transparent;
+            text-align: left;
+        }
+
+        .link-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(79, 70, 229, 0.1);
+            border-color: var(--primary);
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            background: #F1F5F9;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .link-title {
+            font-weight: 700;
+            font-size: 18px;
+            display: block;
+        }
+
+        .link-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .footer-note {
+            margin-top: 48px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="hub-container">
+        <div class="logo">FlowDesk</div>
+        <div class="subtitle">Official Application Support & Legal Documents</div>
+
+        <div class="links-grid">
+            <a href="privacypolicy.html" class="link-card">
+                <div class="icon">🔒</div>
+                <div>
+                    <span class="link-title">Privacy Policy</span>
+                    <span class="link-desc">How we protect and manage your data.</span>
+                </div>
+            </a>
+
+            <a href="deleteaccount.html" class="link-card">
+                <div class="icon">🗑️</div>
+                <div>
+                    <span class="link-title">Account Deletion</span>
+                    <span class="link-desc">Request permanent removal of your account.</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer-note">
+            Built for Productivity & Transparency.
+        </div>
+    </div>
+</body>
+</html>
